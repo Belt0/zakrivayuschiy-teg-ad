@@ -62,12 +62,9 @@
 }
 
 .cards {
-  width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.5rem);;
+  width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.5rem);
   display: flex;
   flex-direction: column;
-}
-
-.cards {
   gap: 50px;
 }
 
@@ -110,11 +107,11 @@
     0 -1px var(--bg-color);
 }
 
-@supports ((text-stroke: 1px var(--bg-color);) or (-webkit-text-stroke: 1px var(--bg-color);)) {
-  .card__label {
+@supports ((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
+  .label__text {
     text-shadow: none;
-    -webkit-text-stroke: 1px var(--bg-color);
-    text-stroke: 1px var(--bg-color);
+    -webkit-text-stroke: 1px var(--bg-color, #fff);
+    text-stroke: 1px var(--bg-color, #fff);
   }
 }
 

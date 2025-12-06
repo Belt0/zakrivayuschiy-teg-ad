@@ -10,7 +10,6 @@
 
 */
 
-/* Keyframes для масштабирования сердца */
 @keyframes heart-scale {
     0% {
         transform: scale(1);
@@ -25,7 +24,6 @@
     }
 }
 
-/* Keyframes для искр */
 @keyframes sparks {
     0% {
         opacity: 0;
@@ -40,7 +38,6 @@
     }
 }
 
-/* Базовые стили для иконки сердца */
 .like-icon {
     width: 2.4375rem;
     height: 2.25rem;
